@@ -1,0 +1,4 @@
+[submodule "ompl"]
+	path = ompl
+	url = git@github.com:chazcornwall/ompl.git
+	branch = open
