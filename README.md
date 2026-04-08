@@ -6,13 +6,13 @@ TODO: Include citation
 ## Changes to OMPL
 
 We add a `bias_adjustment` parameter in RRT*, Informed RRT*, BIT*, EIT*, and BLIT* corresponding to the algorithm
-described in our paper.
+described in our paper. This parameter is added using the `Planner::declareParam<bool>` API in each of the planner's constructors. 
 
 ## Run experiments
 
 1. Use `git submodule init` and `git submodule update` to use the forked OMPL library
-2. Follow the build instructions in the [OMPL README.md](ompl/README.md)
-3. Open [run_experiment.cpp](ompl/experiments/run_experiment.cpp)
+2. Follow the build instructions in the [OMPL README.md](../ompl/README.md)
+3. Open [run_experiment.cpp](../ompl/experiments/run_experiment.cpp)
 4. Change the `rootpath` where data is stored:
 
 ```
@@ -47,7 +47,7 @@ described in our paper.
     ex::MaxRadius last_radius = ex::R_DEFAULT;
 ```
 
-5. Open [data_directory.hpp](ompl/experiments/cpputils/data_directory.hpp) to see available options for experiment variables.
+5. Open [data_directory.hpp](../ompl/experiments/cpputils/data_directory.hpp) to see available options for experiment variables.
     * The `Map` data types define the naming convention used when data is stored
     * The `enum` data types define the variables. Since enums correspond to integers, the `enum` definitions will show which variables will be evaluated in the experiment. 
 6. Run the experiment from this repo's root directory: `./ompl/build/Release/experiments/run_experiment`
