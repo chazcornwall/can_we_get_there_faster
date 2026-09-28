@@ -1,7 +1,19 @@
 # can_we_get_there_faster
 Code for OMPL experiments from corresponding IEEE RAL paper. Tested in Ubuntu 22.04.
 
-TODO: Include citation
+Bibtex Citation:
+
+```
+@ARTICLE{cornwal2026tuning,
+  author={Cornwall, Chaz and Majhor, Casey and Schexnaydre, Logan and Mattson, Ian and Bos, Jeremy P.},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Can We Get There Faster: Tuning Sample-Based Path Planners}, 
+  year={2026},
+  volume={11},
+  number={6},
+  pages={7238-7245},
+  doi={10.1109/LRA.2026.3685923}}
+```
 
 ## Changes to OMPL
 
